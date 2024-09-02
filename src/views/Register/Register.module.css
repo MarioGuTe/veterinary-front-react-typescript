@@ -1,0 +1,136 @@
+.form_container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.8rem 0 1.5rem 0;
+}
+
+.register_form {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background: var(--white-var);
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  width: 70%;
+  min-width: 85%;
+}
+
+.register_form::after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom right,
+    transparent 50%,
+    rgba(0, 0, 0, 0.1) 50%
+  );
+  z-index: -1;
+}
+
+.form_main_section {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 100%;
+}
+
+.register_description {
+  color: var(--grey-text);
+  height: 100%;
+}
+
+.inputs_section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 100%;
+}
+
+.inputs_section input {
+  border: 2.5px solid var(--grey-text);
+  border-radius: 8px;
+  padding: 0.3rem;
+  width: 80%;
+  color: var(--purple-dark);
+}
+
+.terms_of_service_container {
+  align-self: flex-start;
+  padding: 0;
+  width: 100%;
+}
+
+.submit_btn {
+  width: 80%;
+  color: var(--white-var);
+  background: var(--purple-dark);
+  padding: 0.75rem 0.35rem 0.75rem 0.35rem;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.form_image_container {
+  max-height: 100%;
+}
+
+.form_image_container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0 6px 6px 0;
+}
+
+.terms_of_service_container {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.checkbox_container {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 20fr;
+  align-items: center;
+  width: 100%;
+}
+.checkbox_container input {
+  width: 80%;
+}
+
+.checkbox_container p {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.react-datepicker-wrapper {
+  width: 80%;
+}
+
+@media (max-width: 550px) {
+  .form_container {
+    height: initial;
+  }
+
+  .form_image_container {
+    display: none;
+  }
+
+  .register_form {
+    grid-template-columns: auto;
+
+    width: 70%;
+    min-width: 85%;
+  }
+}

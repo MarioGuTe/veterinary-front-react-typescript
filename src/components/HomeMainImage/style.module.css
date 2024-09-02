@@ -1,0 +1,36 @@
+.img_container {
+  width: 100%;
+  height: 100%;
+}
+
+.img_container img {
+  min-width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+@media (max-width: 770px) {
+  .img_container {
+    min-width: 100%;
+    height: 100%;
+  }
+
+  .img_container img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 550px) {
+  .img_container {
+    min-width: 100%;
+    height: 100%;
+  }
+
+  .img_container img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,14 @@
+.nav_button {
+  font-size: 1.15rem;
+  font-weight: 500;
+  padding: 0.75rem 0.35rem 0.75rem 0.35rem;
+  background: var(--purple-dark);
+  color: var(--white-var);
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@media (max-width: 770px) {
+}

@@ -1,0 +1,58 @@
+export const appointments = [
+  {
+    id: 1,
+    date: new Date("2024-03-06"),
+    time: "10:00",
+    userId: 1,
+    status: "active",
+  },
+  {
+    id: 2,
+    date: new Date("2024-03-07"),
+    time: "11:00",
+    userId: 2,
+    status: "active",
+  },
+  {
+    id: 3,
+    date: new Date("2024-03-08"),
+    time: "12:00",
+    userId: 3,
+    status: "cancelled",
+  },
+  {
+    id: 4,
+    date: new Date("2024-03-09"),
+    time: "13:00",
+    userId: 4,
+    status: "active",
+  },
+  {
+    id: 5,
+    date: new Date("2024-03-10"),
+    time: "14:00",
+    userId: 5,
+    status: "active",
+  },
+  {
+    id: 6,
+    date: new Date("2024-03-11"),
+    time: "15:00",
+    userId: 6,
+    status: "cancelled",
+  },
+  {
+    id: 7,
+    date: new Date("2024-03-12"),
+    time: "16:00",
+    userId: 7,
+    status: "active",
+  },
+  {
+    id: 8,
+    date: new Date("2024-03-13"),
+    time: "17:00",
+    userId: 8,
+    status: "cancelled",
+  },
+];

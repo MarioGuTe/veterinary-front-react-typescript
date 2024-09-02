@@ -1,0 +1,70 @@
+.schedule_appointment_container {
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.appointment_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--white-var);
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  min-height: 80%;
+  text-align: center;
+}
+
+.appointment_form::after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom right,
+    transparent 50%,
+    rgba(0, 0, 0, 0.1) 50%
+  );
+  z-index: -1;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.form_group label {
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+.form_group input {
+  margin-top: 0.5rem;
+  border: 2.5px solid var(--grey-text);
+  border-radius: 8px;
+  padding: 0.3rem;
+  width: 40%;
+  color: var(--purple-dark);
+  font-size: 1.25rem;
+}
+
+.schedule_btn {
+  margin-top: 1rem;
+  width: 60%;
+  color: var(--white-var);
+  background: var(--purple-dark);
+  padding: 0.75rem 0.35rem 0.75rem 0.35rem;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 500;
+}

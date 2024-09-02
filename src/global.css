@@ -1,0 +1,63 @@
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 700
+
+.fredoka-<uniquifier> {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+
+:root {
+  --white-var: hsl(0, 0%, 100%);
+  --purple-dark: hsl(330, 59%, 70%);
+  --grey-text: hsl(0, 1%, 68%);
+  --grey-dark: hsl(0, 0%, 81%);
+}
+
+html,
+body,
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 95%;
+  margin: 0 auto;
+}
+
+body {
+  background: rgb(236, 235, 235);
+  font-family: "Fredoka", sans-serif;
+  list-style: none;
+  overflow-x: hidden;
+}
+
+/* react-date-picker styling Comment: it doesn´t work as a module styling */
+.register-datepicker .react-datepicker-wrapper {
+  width: 100%;
+}
+
+/* Media query for small-sized screens (e.g., mobile phones) */
+@media (max-width: 770px) {
+  html,
+  body,
+  #root {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  html,
+  body,
+  #root {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
